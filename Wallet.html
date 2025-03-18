@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Wallet</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS Link -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .wallet-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-top: 50px;
+    }
+    .balance-section {
+      text-align: center;-
+      padding: 20px;
+    }
+    .balance-amount {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #28a745;
+    }
+    .transaction-table th, .transaction-table td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main container -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Wallet Card -->
+      <div class="col-md-8 wallet-card">
+        <!-- Wallet Header -->
+        <h3 class="text-center">My Digital Wallet</h3>
+
+        <!-- Wallet Balance Section -->
+        <div class="balance-section">
+          <h5>Wallet Balance</h5>
+          <div class="balance-amount">Rs.2500</div>
+        </div>
+
+        <!-- Wallet Actions (Add Funds and Withdraw) -->
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <button class="btn btn-success w-100">Add Funds</button>
+          </div>
+          <div class="col-md-5">
+            <button class="btn btn-danger w-100">Withdraw Funds</button>
+          </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="mt-4">
+          <h5>Recent Transactions</h5>
+          <table class="table table-bordered transaction-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Transaction</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025-01-15</td>
+                <td>Payment to John</td>
+                <td>Rs.15000</td>
+              </tr>
+              <tr>
+                <td>2025-01-12</td>
+                <td>Deposit</td>
+                <td>Rs.500</td>
+              </tr>
+              <tr>
+                <td>2025-01-10</td>
+                <td>Payment for groceries</td>
+                <td>Rs.1200</td>
+              </tr>
+              <tr>
+                <td>2025-01-08</td>
+                <td>Transfer from Bank</td>
+                <td>Rs.1000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
